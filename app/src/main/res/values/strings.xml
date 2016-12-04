@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ShowPdfUtil</string>
+
+    <!-- PdfViewer-->
+    <string name="pdf_msg_loading">正在加载&#8230;</string>
+    <string name="pdf_download_retry">重试</string>
+    <string name="pdf_download_quit">退出</string>
+    <string name="pdf_viewer_menu_exit">退出阅读</string>
+    <string name="pdf_viewer_menu_fullscreen">全屏</string>
+    <string name="pdf_viewer_toast_file_corrupted">该文件已损坏</string>
+    <string name="pdf_viewer_toast_file_unsupport">不支持打开该文件</string>
+
+    <!--Download file-->
+    <string name="download_title">文件下载</string>
+    <string name="download_total_size">总大小：%1$s</string>
+    <string name="download_ing_size">已下载：%1$s</string>
+    <string name="download_fail">下载失败！</string>
+    <string name="download_ing">正在下载,请稍候&#8230;</string>
+    <string name="download_finish_open">下载完成，正在打开文件&#8230;</string>
+</resources>

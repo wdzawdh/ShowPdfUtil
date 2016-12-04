@@ -1,0 +1,38 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- 通用的正文文案 -->
+    <style name="CommonTextViewPrimary">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@drawable/common_text_primary_selector</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- 通用的重要文案 -->
+    <style name="CommonTextViewImportant" parent="CommonTextViewPrimary">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <!-- 通用的红色边框按钮 -->
+    <style name="CommonButtonStrokeRed" parent="CommonButton">
+        <item name="android:background">@drawable/common_shape_stroke_btn_red_bg_normal</item>
+        <item name="android:textColor">#f66b6b</item>
+    </style>
+
+    <style name="CommonButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/common_btn_bg_selector</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+</resources>

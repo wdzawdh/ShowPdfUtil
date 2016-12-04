@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efefef"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <TextView
+        android:id="@+id/tv_download_status"
+        style="@style/CommonTextViewImportant"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/download_ing"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_download_file_name"
+        style="@style/CommonTextViewImportant"
+        android:layout_marginTop="32dp"
+        android:textSize="15sp" />
+
+    <!-- 总大小：5MB -->
+    <TextView
+        android:id="@+id/tv_file_total_size"
+        style="@style/CommonTextViewImportant"
+        android:layout_marginTop="16dp"
+        android:text="" />
+
+    <!-- 已下载：0 KB -->
+    <TextView
+        android:id="@+id/tv_downloading_size"
+        style="@style/CommonTextViewImportant"
+        android:layout_marginTop="16dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_downloading_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <ProgressBar
+            android:id="@+id/pb_downloading"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:indeterminateDrawable="@android:drawable/progress_indeterminate_horizontal"
+            android:max="100"
+            android:progressDrawable="@drawable/progress_bar_download"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_download_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ea5505"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_download_cancel"
+        style="@style/CommonButtonStrokeRed"
+        android:layout_width="136dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp"
+        android:text="取消"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_btn_download_fail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btn_download_retry"
+            style="@style/CommonButton"
+            android:layout_width="136dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="@string/pdf_download_retry"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btn_download_quit"
+            style="@style/CommonButtonStrokeRed"
+            android:layout_width="136dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="16dp"
+            android:gravity="center"
+            android:text="@string/pdf_download_quit"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>
