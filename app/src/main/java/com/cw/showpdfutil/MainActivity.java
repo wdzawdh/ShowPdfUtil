@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
     @OnClick(R.id.bt_download_pdf)
     public void onClick() {
-        String url = "https://github.com/wdzawdh/GetPhotoUtils/raw/master/app/src/main/res/drawable/test.pdf";
+        String url = "https://github.com/wdzawdh/ShowPdfUtil/raw/master/app/src/main/assets/test.pdf";
         ShowPdfUtil.onGetPdfUrl(this, url, "test.pdf", false);
     }
 }
